@@ -1,4 +1,8 @@
 body {
+  background-color: grey;
+  background-image: linear-gradient(#4040a1, black);
+  background-attachment: fixed;
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

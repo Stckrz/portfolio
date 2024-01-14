@@ -1,0 +1,12 @@
+.skillsContainer{
+	user-select: none;
+	height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-evenly;
+	padding: 50px;
+	background-color: black;
+	z-index: 1;
+}

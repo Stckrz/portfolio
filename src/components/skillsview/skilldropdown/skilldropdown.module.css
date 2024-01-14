@@ -1,0 +1,22 @@
+.iconContainer{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.reactIcon{
+	animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.descriptionContainer{
+	height: 20px;
+}
