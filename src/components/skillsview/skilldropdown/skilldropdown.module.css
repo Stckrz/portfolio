@@ -1,10 +1,14 @@
 .iconContainer{
 	width: 20%;
+	aspect-ratio: 1/1;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
 
 .reactIcon{
+	display: flex;
 	animation: App-logo-spin infinite 20s linear;
 }
 
