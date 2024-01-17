@@ -1,0 +1,7 @@
+-Fix resume and add link to portofolio
+-Add projects component to showcase projects..
+--something to show each one, with maybe a slight description
+-contact links(github, linkedin, email, etc...)
+-name component which just shows my name etc..
+-navbar icon which shows maybe a picture of me or something?
+-description of me and my experience, etc..

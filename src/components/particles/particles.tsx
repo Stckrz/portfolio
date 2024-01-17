@@ -41,7 +41,7 @@ export const BackgroundParticles: React.FC = () => {
 						enable: true,
 						parallax: {
 							enable: true,
-							force: 100,
+							force: 300,
 							smooth: 5
 						}
 					},

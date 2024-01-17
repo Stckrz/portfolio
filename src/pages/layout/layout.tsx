@@ -9,7 +9,7 @@ export const Layout = () => {
 		<>
 			<div>
 				<BackgroundParticles />
-				<Navbar />
+				{/* <Navbar /> */}
 				<Outlet />
 			</div>
 		</>

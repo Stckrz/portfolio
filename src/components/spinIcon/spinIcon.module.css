@@ -1,0 +1,23 @@
+.spinArrow{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: arrowspin 1.5s linear infinite;
+}
+
+
+@keyframes arrowspin{
+	0%{
+		transform: rotateX(15deg)
+		translateX(-10px)
+	}
+	50%{
+		transform: rotateX(195deg)
+		translateX(0px)
+	}
+	100%{
+		transform: rotateX(375deg)
+		translateX(-10px)
+	}
+}
+

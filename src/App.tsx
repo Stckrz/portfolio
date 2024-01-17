@@ -13,7 +13,7 @@ function App() {
     <div className={style.App}>
 			<Navbar />
 			<BackgroundParticles />
-			<Skills />
+			{/* <Skills /> */}
     </div>
   );
 }

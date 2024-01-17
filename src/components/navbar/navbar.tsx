@@ -1,16 +1,19 @@
 import React from 'react';
 import style from './navbar.module.css';
 import { Link } from 'react-router-dom';
+import { NavbarIcon } from 'components/navbar/navbarIcon/navbarIcon';
 
 export const Navbar: React.FC = () => {
 
 
 
-	return(
+	return (
 		<>
 			<div className={style.navbarContainer}>
-				<Link to="home">home</Link>
-				<Link to="skills">skills</Link>
+				<NavbarIcon />
+				<div className={style.linksContainer}>
+					<Link to="home">home</Link>
+				</div>
 			</div>
 		</>
 	)

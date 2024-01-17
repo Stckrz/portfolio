@@ -1,0 +1,15 @@
+.contentsWrapper{
+	width: 100%;
+	aspect-ratio: 16/9;
+	display: grid;
+}
+
+.linksWrapper{
+	display: flex;
+	align-self: flex-end;
+	justify-self: flex-end;
+	flex-direction: column;
+	min-width: 200px;
+	width: 12%;
+	margin-bottom: 10px;
+}

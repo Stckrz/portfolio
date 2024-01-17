@@ -1,0 +1,26 @@
+.linkContainer{
+	font-family:monospace;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.arrowBox{
+	width: 20%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.showAss{
+	display: none;
+}
+
+.categoryName{
+	width: 80%;
+	padding-right: 5px;
+}
+
+.linkContainer:hover .showAss{
+	display: flex;
+}

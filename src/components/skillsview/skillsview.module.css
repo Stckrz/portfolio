@@ -1,12 +1,75 @@
 .skillsContainer{
 	user-select: none;
-	height: 600px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px;
 	justify-content: space-evenly;
 	padding: 50px;
+}
+
+.skillWrapIn{
 	background-color: black;
-	z-index: 1;
+	animation: fade-in 0.25s linear;
+	width: 100%;
+}
+.skillWrapOut{
+	background-color: black;
+	animation: fade-out 0.25s linear;
+	width: 100%;
+}
+
+.backButton{
+	height: 25px;
+	aspect-ratio: 1/1;
+	margin: 5px;
+	animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle{
+	0%{
+	transform: rotateY(180deg)
+	translateX(0px);
+}
+	50%{
+	transform: rotateY(180deg)
+	translateX(5px);
+}
+	100%{
+	transform: rotateY(180deg)
+	translateX(0px);
+}
+
+
+}
+
+@keyframes fade-in{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
+
+}
+
+@keyframes fade-in{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
+
+}
+
+
+@keyframes fade-out{
+	from{
+		opacity: 100%;
+	}
+	to{
+		opacity: 0%;
+	}
+
 }
