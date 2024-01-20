@@ -1,11 +1,12 @@
 import style from './projectsContainer.module.css';
 import { MdOutlinePlayArrow } from 'react-icons/md';
 
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
 import { CurrentPage } from 'pages/home/home';
+import { ProjectDisplay } from 'components/projects/projectDisplay/projectDisplay';
 
 export const Projects: React.FC = () => {
-	const { setPage } = useContext<any>(CurrentPage)
+	const { setPage } = useContext<any>(CurrentPage);
 
 	return (
 		<>
@@ -14,7 +15,10 @@ export const Projects: React.FC = () => {
 					<div className={style.backButton}><MdOutlinePlayArrow size={"3em"} /></div>
 				</div>
 				<div className={style.projectsContainer} >
-					assdicks
+					<ProjectDisplay color={"blue"} />
+					<ProjectDisplay color={"red"} />
+
+
 				</div>
 			</div>
 		</>

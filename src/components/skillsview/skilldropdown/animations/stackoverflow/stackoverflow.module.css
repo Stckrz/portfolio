@@ -1,0 +1,141 @@
+.stackOverflowIconWrapper{
+	position: relative;
+	height: 5.5em;
+	width: 5.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottomBucket{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	height: 100px;
+	width: 95px;
+	z-index: 3;
+}
+
+.bucketCutout{
+	position: absolute;
+	align-self: center;
+	justify-self: center;
+	height: 70px;
+	width: 70px;
+	background-color: black;
+	z-index: 10;
+}
+
+.bucketCutoutTop{
+	align-self: flex-start;
+	height: 55px;
+	width: 100px;
+	background-color: black;
+	z-index: 2;
+}
+
+.blockContainer{
+	position: absolute;
+	bottom: 35%;
+	height: 75px;
+	width: 55px;
+}
+
+.block{
+	align-self: flex-start;
+	position: absolute;
+	background-color: white;
+	height: 12px;
+	width: 55px;
+	z-index: 5
+}
+
+.block2{
+	top: 25px;
+	animation: 1s blocktwoanimation ease-in infinite alternate;
+}
+
+@keyframes blocktwoanimation{
+	from{
+		transform:
+		translateX(0)
+		rotateZ(0);
+		top: 25px;
+	}
+	to{
+		transform:
+		translateX(25px)
+		rotateZ(45deg);
+		top: -2px;
+	}
+}
+
+.block3{
+	top: 35px;
+	animation: 1s blockthreeanimation ease-in infinite alternate;
+}
+
+@keyframes blockthreeanimation{
+	from{
+		transform:
+		translateX(0)
+		rotateZ(0);
+		top: 35px;
+	}
+	to{
+		transform: 
+		translateX(13px)
+		rotateZ(32deg)
+		;
+		top: 14px;
+	}
+}
+
+.block4{
+
+	top: 45px;
+	animation: 1s blockfouranimation ease-in infinite alternate;
+}
+
+@keyframes blockfouranimation{
+	from{
+		transform:
+		translateX(0)
+		rotateZ(0);
+		top: 45px;
+	}
+	to{
+		transform: 
+		translateX(5px)
+		rotateZ(20deg)
+		;
+		top: 31px;
+	}
+}
+
+.block5{
+	top: 55px;
+	animation: 1s blockfiveanimation ease-in infinite alternate; 
+}
+
+@keyframes blockfiveanimation{
+	from{
+		transform:
+		translateX(0)
+		rotateZ(0);
+		top: 55px;
+	}
+	to{
+		transform: 
+		translateX(1px)
+		rotateZ(10deg)
+		;
+		top: 48px;
+	}
+}
+
+.block6{
+	top: 65px;
+}

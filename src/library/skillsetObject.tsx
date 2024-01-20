@@ -7,6 +7,8 @@ import { FaCss3Alt } from 'react-icons/fa';
 import { FaHtml5 } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 
+import { StackOverflowIcon } from 'components/skillsview/skilldropdown/animations/stackoverflow/stackoverflow';
+
 export const skillsArray = [
 	{
 		icon: <FaHtml5 size={"5em"} />,
@@ -51,7 +53,8 @@ export const skillsArray = [
 
 	},
 	{
-		icon: <FaStackOverflow size={"5em"} />,
+		// icon: <FaStackOverflow size={"5em"} />,
+		icon: <StackOverflowIcon />,
 		title: 'Stack Overflow',
 		description: "some words",
 

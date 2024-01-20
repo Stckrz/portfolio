@@ -14,5 +14,4 @@ export const Contents: React.FC = () => {
 			</div>
 		</>
 	)
-
 }
