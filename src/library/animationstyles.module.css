@@ -1,0 +1,30 @@
+
+/* These are the css classes for component fade-in and fade out, and any div which should fade-in or fade-out must be wrapped in these, using the handleFadeOut function for the fade out effect */
+.componentFadeIn{
+	height: 100%;
+	width: 100%;
+	animation: fade-in 0.25s linear;
+}
+.componentFadeOut{
+	height: 100%;
+	width: 100%;
+	animation: fade-out 0.25s linear;
+}
+
+@keyframes fade-in{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
+}
+
+@keyframes fade-out{
+	from{
+		opacity: 100%;
+	}
+	to{
+		opacity: 0%;
+	}
+}

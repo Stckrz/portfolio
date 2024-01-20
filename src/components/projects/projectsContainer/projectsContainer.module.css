@@ -30,35 +30,12 @@
 	transition: height 0.5s, width 0.5s;
 	order: 2;
 }
+
 .projectDisplayContainerMin:hover{
 	transform: translateY(-0.25em);
-
 }
 
 
 
 
 
-.backButton{
-	height: 3em;
-	display: flex;
-	align-items: flex-start;
-	aspect-ratio: 1/1;
-	margin: 5px;
-	animation: wiggle 2s linear infinite;
-}
-
-@keyframes wiggle{
-	0%{
-		transform: rotateY(180deg)
-		translateX(0px);
-	}
-		50%{
-		transform: rotateY(180deg)
-		translateX(5px);
-	}
-		100%{
-		transform: rotateY(180deg)
-		translateX(0px);
-	}
-}

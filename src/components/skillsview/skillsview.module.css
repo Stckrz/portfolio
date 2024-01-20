@@ -6,43 +6,11 @@
 	gap: 10px;
 	justify-content: space-evenly;
 	padding: 50px;
-}
-
-.skillWrapIn{
 	background-color: black;
-	animation: fade-in 0.25s linear;
-	width: 100%;
 }
-.skillWrapOut{
+
+.skillWrap{
+	width: 100%;
 	background-color: black;
-	animation: fade-out 0.25s linear;
-	width: 100%;
 }
 
-@keyframes fade-in{
-	from{
-		opacity: 0%;
-	}
-	to{
-		opacity: 100%;
-	}
-}
-
-@keyframes fade-in{
-	from{
-		opacity: 0%;
-	}
-	to{
-		opacity: 100%;
-	}
-}
-
-
-@keyframes fade-out{
-	from{
-		opacity: 100%;
-	}
-	to{
-		opacity: 0%;
-	}
-}
