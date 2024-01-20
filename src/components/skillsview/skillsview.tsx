@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import style from './skillsview.module.css';
 import { MdOutlinePlayArrow } from 'react-icons/md';
+import { BackButton } from 'components/backButton/backButton';
 
 
 import { useContext } from 'react';
@@ -26,8 +27,8 @@ export const Skills: React.FC = () => {
 	return (
 		<>
 			<div className={isMounted ? style.skillWrapIn: style.skillWrapOut}>
-				<div className={style.backButton} onClick={() => { handleFadeOut() }}>
-					<MdOutlinePlayArrow size={"3em"} />
+				<div onClick={() => { handleFadeOut() }}>
+					<BackButton />
 				</div>
 				<div className={style.skillsContainer}>
 					{skillsArray.map((item) => {

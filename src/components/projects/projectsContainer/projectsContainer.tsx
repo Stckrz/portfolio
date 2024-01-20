@@ -1,24 +1,65 @@
 import style from './projectsContainer.module.css';
 import { MdOutlinePlayArrow } from 'react-icons/md';
 
-import { useState, useContext } from 'react';
+import { useState, useContext} from 'react';
 import { CurrentPage } from 'pages/home/home';
 import { ProjectDisplay } from 'components/projects/projectDisplay/projectDisplay';
+import { BackButton } from 'components/backButton/backButton';
+
 
 export const Projects: React.FC = () => {
 	const { setPage } = useContext<any>(CurrentPage);
+	const [projectObjectArray, setProjectObjectArray] = useState(
+		[
+			{
+				color: 'red',
+				isBig: true,
+			},
+			{
+				color: 'blue',
+				isBig: false,
+			},
+			{
+				color: 'green',
+				isBig: false,
+			},
+			{
+				color: 'white',
+				isBig: false,
+			}
+		]
+	)
+
+
+	function isBigHandler(color: string) {
+		let tempArray = [...projectObjectArray]
+		tempArray.map((item) => {
+			item.color === color ?
+				item.isBig = true :
+				item.isBig = false
+		})
+		setProjectObjectArray(tempArray)
+	}
+
 
 	return (
 		<>
 			<div className={style.projectsWrap}>
 				<div className={style.backButtonBox} onClick={() => { setPage('Contents') }}>
-					<div className={style.backButton}><MdOutlinePlayArrow size={"3em"} /></div>
+					<BackButton />
 				</div>
 				<div className={style.projectsContainer} >
-					<ProjectDisplay color={"blue"} />
-					<ProjectDisplay color={"red"} />
-
-
+					{projectObjectArray.map((item) => {
+						return (
+							<div className={
+								item.isBig ? style.projectDisplayContainerMax : style.projectDisplayContainerMin}
+								onClick={() => { isBigHandler(item.color) }}
+							>
+								<ProjectDisplay color={item.color} />
+							</div>
+						)
+					})
+					}
 				</div>
 			</div>
 		</>
