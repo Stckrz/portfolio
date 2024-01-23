@@ -1,0 +1,11 @@
+.projectThumbnailDisplayWrapper{
+	height: 90%;
+	border: 1px solid black;
+	width: 100%;
+	display: inline-block;
+}
+
+.projectName{
+	font-size: 12px;
+	text-align: center;
+}

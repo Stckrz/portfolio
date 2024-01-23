@@ -1,68 +1,58 @@
-import style from './projectsContainer.module.css';
+import { useState, useContext } from 'react';
 
+//local imports
+import style from './projectsContainer.module.css';
+import { projectsObject } from 'library/projectsObject';
 import animationStyle from 'library/animationstyles.module.css';
 import { handleFadeOut } from 'library/animationfunctions';
 
-import { useState, useContext } from 'react';
+//context import
 import { CurrentPage } from 'pages/home/home';
 
-import { ProjectDisplay } from 'components/projects/projectDisplay/projectDisplay';
+//component imports
+import { ProjectThumbnailDisplay } from 'components/projects/projectDisplay/projectThumbnailDisplay';
 import { BackButton } from 'components/backButton/backButton';
-
 
 export const Projects: React.FC = () => {
 	const { setPage } = useContext<any>(CurrentPage);
-	const [isMounted, setIsMounted] = useState(true);
-	const [projectObjectArray, setProjectObjectArray] = useState(
-		[
-			{
-				color: 'red',
-				isBig: true,
-			},
-			{
-				color: 'blue',
-				isBig: false,
-			},
-			{
-				color: 'green',
-				isBig: false,
-			},
-			{
-				color: 'white',
-				isBig: false,
-			}
-		]
-	)
 
-	function isBigHandler(color: string) {
-		let tempArray = [...projectObjectArray]
-		tempArray.map((item) => {
-			item.color === color ?
-				item.isBig = true :
-				item.isBig = false
-		})
-		setProjectObjectArray(tempArray)
-	}
+	//state for this components rendering. used for handling the fade-out of the component upon close
+	const [isMounted, setIsMounted] = useState(true);
+
+	const [activeIndex, setActiveIndex] = useState(0);
 
 	return (
 		<>
 			<div className={isMounted ? animationStyle.componentFadeIn : animationStyle.componentFadeOut}>
 				<div className={style.projectsWrap}>
-					<div className={style.backButtonBox} onClick={()=>{handleFadeOut(isMounted, setIsMounted, setPage)}}>
+					<div className={style.backButtonBox} onClick={() => { handleFadeOut(isMounted, setIsMounted, setPage) }}>
 						<BackButton />
 					</div>
 					<div className={style.projectsContainer} >
-						{projectObjectArray.map((item) => {
+
+						{projectsObject.map((project) => {
 							return (
-								<div className={
-									item.isBig ? style.projectDisplayContainerMax : style.projectDisplayContainerMin}
-									onClick={() => { isBigHandler(item.color) }}
+								project.index === activeIndex &&
+								<div
+									className={style.projectDisplayContainerMax}
+									onClick={() => { setActiveIndex(project.index) }}
 								>
-									<ProjectDisplay color={item.color} />
+									<ProjectThumbnailDisplay name={project.name} color={project.color} />
 								</div>
 							)
-						})
-						}
+						})}
+
+						<div className={style.containerContainer}>
+							{projectsObject.map((project) => {
+								return (
+									<div className={style.projectDisplayContainerMin}
+										onClick={() => { setActiveIndex(project.index) }}
+									>
+										<ProjectThumbnailDisplay name={project.name} color={project.color} />
+									</div>
+								)
+							})}
+						</div>
 					</div>
 				</div>
 			</div>
