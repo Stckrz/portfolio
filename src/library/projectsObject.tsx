@@ -13,11 +13,12 @@ export const projectsObject:IProjectInterface[] =
 				iconURL: storefrontthumbnail,
 				overviewURL: storefrontfull,
 				projectDetails: [
-					"hats",
-					"bitches",
-					"tits",
-					"ass",	
-				]
+					"Django back-end, JS/React/TS front-end.",
+					"Fully responsive design.",
+					"All images and item names generated with ai, including advertisements, programatically.",
+					"Not completely 'feature complete', I could still ad some stuff like wishlist, social login, checkout, etc.. but just kind of seems exterraneous at this point.",
+				],
+				projectTools: ["Javascript", "React", "Typescript", "Django"],
 			},
 			{
 				index: 1,

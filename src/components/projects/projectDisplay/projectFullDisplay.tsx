@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './projectFullDisplay.module.css';
+import { ToolsView } from 'components/toolsview/toolsview';
 import { IProjectInterface } from 'library/context';
 
 interface ProjectFullDisplayProps {
@@ -29,7 +30,7 @@ export const ProjectFullDisplay: React.FC<ProjectFullDisplayProps> = ({ project 
 						</ul>
 					</div>
 				</div>
-				<div className={style.bottomInfoPanel}>balls</div>
+				<div className={style.bottomInfoPanel}>{project.projectTools && <ToolsView tools={project.projectTools} />}</div>
 			</div>
 		</>
 	)

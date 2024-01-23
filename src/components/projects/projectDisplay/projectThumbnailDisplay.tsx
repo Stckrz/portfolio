@@ -10,15 +10,17 @@ export const ProjectThumbnailDisplay: React.FC<ProjectThumbnailDisplayProps> = (
 
 	return (
 		<>
-			<div
-				style={{backgroundColor: project.color}}
-				className={style.projectThumbnailDisplayWrapper}>
-				{project.iconURL ?
-				<img src={project.iconURL}/>:
-					<div className={style.comingSoon}>Coming Soon</div>
-				}
+			<div className={style.thumbnailWrapper}>
+				<div
+					style={{ backgroundColor: project.color }}
+					className={style.projectThumbnailDisplayWrapper}>
+					{project.iconURL ?
+						<img src={project.iconURL} /> :
+						<div className={style.comingSoon}>Coming Soon</div>
+					}
+				</div>
+				<div className={style.projectName}>{project.name}</div>
 			</div>
-			<div className={style.projectName}>{project.name}</div>
 		</>
 	)
 }

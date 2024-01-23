@@ -14,5 +14,6 @@ export interface IProjectInterface{
 	color: string,
 	iconURL?: string,
 	overviewURL?: string,
-	projectDetails?: string[]
+	projectDetails?: string[],
+	projectTools?: string[]
 }
