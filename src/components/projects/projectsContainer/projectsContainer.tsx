@@ -5,12 +5,14 @@ import style from './projectsContainer.module.css';
 import { projectsObject } from 'library/projectsObject';
 import animationStyle from 'library/animationstyles.module.css';
 import { handleFadeOut } from 'library/animationfunctions';
+import { IProjectInterface } from 'library/context';
 
 //context import
 import { CurrentPage } from 'pages/home/home';
 
 //component imports
 import { ProjectThumbnailDisplay } from 'components/projects/projectDisplay/projectThumbnailDisplay';
+import { ProjectFullDisplay } from 'components/projects/projectDisplay/projectFullDisplay';
 import { BackButton } from 'components/backButton/backButton';
 
 export const Projects: React.FC = () => {
@@ -30,25 +32,25 @@ export const Projects: React.FC = () => {
 					</div>
 					<div className={style.projectsContainer} >
 
-						{projectsObject.map((project) => {
+						{projectsObject.map((project:IProjectInterface) => {
 							return (
 								project.index === activeIndex &&
 								<div
 									className={style.projectDisplayContainerMax}
 									onClick={() => { setActiveIndex(project.index) }}
 								>
-									<ProjectThumbnailDisplay name={project.name} color={project.color} />
+									<ProjectFullDisplay project={project} />
 								</div>
 							)
 						})}
 
 						<div className={style.containerContainer}>
-							{projectsObject.map((project) => {
+							{projectsObject.map((project:IProjectInterface) => {
 								return (
 									<div className={style.projectDisplayContainerMin}
 										onClick={() => { setActiveIndex(project.index) }}
 									>
-										<ProjectThumbnailDisplay name={project.name} color={project.color} />
+										<ProjectThumbnailDisplay project={project} />
 									</div>
 								)
 							})}

@@ -6,5 +6,13 @@ export const pageInitial = {
 export interface IPageInterface{
 	page: string,
 	setPage: (page: string) => void
+}
 
+export interface IProjectInterface{
+	index: number,
+	name: string,
+	color: string,
+	iconURL?: string,
+	overviewURL?: string,
+	projectDetails?: string[]
 }
