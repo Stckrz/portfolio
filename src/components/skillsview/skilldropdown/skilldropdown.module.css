@@ -23,4 +23,11 @@
 
 .descriptionContainer{
 	height: 20px;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 800px){
+	.iconContainer{
+		width: 30%;
+	}
 }

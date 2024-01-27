@@ -46,3 +46,20 @@
 	text-align: center;
 	color: black;
 }
+
+@media screen and (max-width: 800px){
+	.projectThumbnailDisplayWrapper{
+		justify-content: center;
+	}
+
+	.projectThumbnailDisplayWrapper img{
+		width: 100%;
+		height: 100%;
+		object-position: 50% 50%;
+		object-fit: contain;
+	}
+	.projectThumbnailDisplayWrapper:hover{
+		animation: unset;
+	}
+	
+}

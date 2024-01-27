@@ -27,7 +27,9 @@ export const ToolsView: React.FC<ToolsViewProps> = ({tools}) => {
 			<div className={style.toolsWrapper}>
 				{toolIconsArray.map((icon:any)=>{
 				return(
-					<div>{icon}</div>
+					<div style={{display: 'flex'}}>
+						{icon}
+					</div>
 				)
 				})}
 			</div>

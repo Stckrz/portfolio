@@ -1,11 +1,17 @@
 
 /* These are the css classes for component fade-in and fade out, and any div which should fade-in or fade-out must be wrapped in these, using the handleFadeOut function for the fade out effect */
 .componentFadeIn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 	animation: fade-in 0.25s linear;
 }
 .componentFadeOut{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 	animation: fade-out 0.25s linear;

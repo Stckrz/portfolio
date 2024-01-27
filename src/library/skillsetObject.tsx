@@ -13,50 +13,41 @@ export const skillsArray = [
 	{
 		icon: <FaHtml5 size={"5em"} />,
 		title: 'HTML',
-		description: "some words",
 
 	},
 	{
 		icon: <FaCss3Alt size={"5em"} />,
 		title: 'CSS',
-		description: "some words",
 
 	},
 	{
 		icon: <IoLogoJavascript size={"5em"} />,
 		title: 'Javascript',
-		description: "some words",
 
 	},
 	{
 		icon: <FaReact size={"5em"} />,
 		title: 'React',
-		description: "some words",
 
 	},
 	{
 		icon: <TbBrandTypescript size={"5em"} />,
 		title: 'Typescript',
-		description: "some words",
 
 	},
 	{
 		icon: <FaPython size={"5em"} />,
 		title: 'Python',
-		description: "some words",
 
 	},
 	{
 		icon: <TbBrandDjango size={"5em"} />,
 		title: 'Django',
-		description: "some words",
 
 	},
 	{
-		// icon: <FaStackOverflow size={"5em"} />,
 		icon: <StackOverflowIcon />,
 		title: 'Stack Overflow',
-		description: "some words",
 
 	},
 ]

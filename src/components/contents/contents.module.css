@@ -13,3 +13,18 @@
 	width: 12%;
 	margin-bottom: 10px;
 }
+
+@media screen and (max-width: 800px){
+	.contentsWrapper{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		aspect-ratio: unset;
+	}
+
+	.linksWrapper{
+		align-self: flex-start;
+		justify-self: center;
+	}
+}

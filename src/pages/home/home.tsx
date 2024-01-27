@@ -23,9 +23,7 @@ export const Home = () => {
 							<Contents />
 						}
 						{page === "Skills" &&
-							<div>
 								<Skills />
-							</div>
 						}
 						{page === "Projects" &&
 							<Projects />

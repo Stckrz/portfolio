@@ -1,5 +1,7 @@
 import storefrontthumbnail from 'library/photos/storefrontthumbnail.png';
 import storefrontfull from 'library/photos/storefrontfull.png';
+import mplusspy from 'library/photos/mplusspy2.png';
+import mpslogo from 'library/photos/mpslogo.png';
 
 import { IProjectInterface } from 'library/context';
 
@@ -22,6 +24,13 @@ export const projectsObject:IProjectInterface[] =
 			},
 			{
 				index: 1,
+				name: "Mythic Plus Spy",
+				color: '#CFFAFE',
+				iconURL: mpslogo,
+				overviewURL: mplusspy,
+			},
+			{
+				index: 2,
 				name: "Coming Soon",
 				color: 'grey',
 				iconURL: "",

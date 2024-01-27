@@ -7,10 +7,34 @@
 	justify-content: space-evenly;
 	padding: 50px;
 	background-color: black;
+	
 }
 
 .skillWrap{
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 90%;
 	background-color: black;
+}
+
+
+@media screen and (max-width: 800px){
+	.skillsContainer{
+		padding: 0px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+		height: 80%;
+		flex-direction: row;
+	}
+	.skillWrap{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
 }
 
