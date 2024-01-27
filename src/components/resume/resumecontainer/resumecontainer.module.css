@@ -1,0 +1,24 @@
+:root{
+	--main-bg-color: #F2F2F2;
+	--accent-color: #4155a3;
+}
+
+.resumeContainer{
+	padding: 5px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 24px;
+	color: black;
+	background-color: var(--main-bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	width: 95%;
+}
+
+.resumeContent{
+	display: flex;
+	height: 92%;
+	width:  96%;
+	border: 15px solid var(--accent-color);
+}

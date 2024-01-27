@@ -9,6 +9,7 @@ import {
 import { Skills } from 'components/skillsview/skillsview';
 import { Contents } from 'components/contents/contents';
 import { Projects } from 'components/projects/projectsContainer/projectsContainer';
+import { Resume } from 'components/resume/resumecontainer/resumecontainer';
 
 export const CurrentPage = createContext<IPageInterface>(pageInitial)
 
@@ -27,6 +28,9 @@ export const Home = () => {
 						}
 						{page === "Projects" &&
 							<Projects />
+						}
+						{page === "Resume" &&
+							<Resume />
 						}
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 import style from './contents.module.css';
 import { SectionLink } from 'components/sectionLink/sectionLink';
 
-let categories = ['About', 'Skills', 'Projects', 'Experience', 'Resume']
+let categories = ['About', 'Skills', 'Projects', 'Resume']
 
 export const Contents: React.FC = () => {
 	return (

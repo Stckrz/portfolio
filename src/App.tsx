@@ -3,7 +3,6 @@ import logo from './logo.svg';
 
 import { Skills } from './components/skillsview/skillsview';
 import { BackgroundParticles } from 'components/particles/particles';
-import { Navbar } from 'components/navbar/navbar';
 
 import style from './App.module.css';
 
@@ -11,7 +10,6 @@ import style from './App.module.css';
 function App() {
   return (
     <div className={style.App}>
-			<Navbar />
 			<BackgroundParticles />
 			{/* <Skills /> */}
     </div>
