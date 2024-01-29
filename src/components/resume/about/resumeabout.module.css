@@ -1,12 +1,10 @@
-.titleContainer{
+.resumeAboutContainer{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: center;
+	height: 100%;
 	width: 100%;
 	background-color: white;
 	box-shadow: inset 2px 2px 2px 0px var(--accent-color); 
 }
 
-.contactInfo{
-	align-self: flex-end;
-}
