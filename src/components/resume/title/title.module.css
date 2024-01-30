@@ -7,6 +7,14 @@
 	box-shadow: inset 2px 2px 2px 0px var(--accent-color); 
 }
 
+.nameBar{
+	margin: 10px;
+}
+
 .contactInfo{
 	align-self: flex-end;
+}
+
+.phoneNumber{
+	font-size: medium;
 }

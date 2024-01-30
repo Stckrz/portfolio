@@ -8,11 +8,14 @@ export const Title: React.FC = () => {
 			<div className={style.titleContainer}>
 				<div className={style.nameBar}>
 					Madison Sage
-				</div>
-				<div className={style.contactInfo}>
-					<ContactBar />
+					<div className={style.phoneNumber}>
+					(406)-475-4836
 				</div>
 			</div>
+			<div className={style.contactInfo}>
+				<ContactBar />
+			</div>
+		</div>
 		</>
 	)
 

@@ -38,18 +38,41 @@
 	width: 30%;
 }
 
-.bottomInfoPanel{
-	color: black;
-	display: flex;
-	width: 50%;
-	height: 100%;
-}
 
 .projectDetailsList{
 	display: flex;	
 	flex-direction: column;
 	justify-content: space-evenly;
 	height: 100%;
+}
+
+.bottomInfoPanel{
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 55%;
+	height: 100%;
+}
+
+.toolsContainer{
+	display: flex;
+	flex-direction: column;
+}
+
+.projectLinks{
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	flex-direction: column;
+	font-size: medium;	
+}
+
+.projectLinks a{
+	cursor: pointer;
+	font-size: x-large;
+	color: black;
 }
 
 

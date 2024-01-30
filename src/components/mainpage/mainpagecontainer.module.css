@@ -1,0 +1,10 @@
+.mainPageWrapper{
+	height: 1000%;
+	width: 100%;
+	position: absolute;	
+	display: flex;
+	align-items: center;
+	background-color: red;	
+	z-index: 0;
+	opacity: 80%;
+}

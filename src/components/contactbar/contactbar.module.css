@@ -1,0 +1,6 @@
+.contactBarContainer{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	font-size: x-large;
+}

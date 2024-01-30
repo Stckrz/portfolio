@@ -2,6 +2,14 @@
 	width: 100%;
 	aspect-ratio: 16/9;
 	display: grid;
+	position: relative;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
 }
 
 .linksWrapper{
@@ -12,6 +20,8 @@
 	min-width: 200px;
 	width: 12%;
 	margin-bottom: 10px;
+	z-index: 1;
+	
 }
 
 @media screen and (max-width: 800px){

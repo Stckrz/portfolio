@@ -16,4 +16,6 @@ export interface IProjectInterface{
 	overviewURL?: string,
 	projectDetails?: string[],
 	projectTools?: string[]
+	githubLink?: string,
+	siteLink?: string
 }

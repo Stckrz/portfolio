@@ -21,6 +21,8 @@ export const projectsObject:IProjectInterface[] =
 					"Not completely 'feature complete', I could still ad some stuff like wishlist, social login, checkout, etc.. but just kind of seems exterraneous at this point.",
 				],
 				projectTools: ["Javascript", "React", "Typescript", "Django"],
+				githubLink: 'https://github.com/Stckrz/storefront',
+				siteLink: 'https://stckrz.com/storefront',
 			},
 			{
 				index: 1,
@@ -28,6 +30,14 @@ export const projectsObject:IProjectInterface[] =
 				color: '#CFFAFE',
 				iconURL: mpslogo,
 				overviewURL: mplusspy,
+				projectDetails: [
+					"Simple application which shows how many rewards a character in World of Warcraft has unlocked for their vault in the current week.",
+					"Responsive design, css is all Tailwind.",
+					"I wanted to keep the design as simple as possible, with a little flair here and there.. More could be done here but I think it's acceptable as is."
+				],
+				projectTools: ["Javascript", "React", "Typescript", "Tailwind"],
+				githubLink: 'https://github.com/Stckrz/MythicPlusSpy',
+				siteLink: 'https://stckrz.com/MythicPlusSpy',
 			},
 			{
 				index: 2,
