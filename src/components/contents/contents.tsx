@@ -11,7 +11,7 @@ export const Contents: React.FC = () => {
 				<MainPage />
 				hi! Am Maddie :3
 				<div className={style.linksWrapper}>
-					{categories.map((category) => {return(<SectionLink category={category} />)})}
+					{categories.map((category) => { return (<SectionLink category={category} />) })}
 				</div>
 			</div>
 		</>

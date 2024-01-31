@@ -6,6 +6,7 @@
 	overflow: scroll;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+	
 }
 
 .example::-webkit-scrollbar {
@@ -13,6 +14,7 @@
 }
 
 .linksWrapper{
+	position: fixed;
 	display: flex;
 	align-self: flex-end;
 	justify-self: flex-end;
