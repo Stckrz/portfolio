@@ -3,10 +3,11 @@
 	aspect-ratio: 16/9;
 	display: grid;
 	position: relative;
-	overflow: scroll;
+	justify-content: center;
+	align-items: center;
+	/* overflow: scroll; */
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	
 }
 
 .example::-webkit-scrollbar {
@@ -23,8 +24,16 @@
 	width: 12%;
 	margin-bottom: 10px;
 	z-index: 1;
-	
 }
+
+.nextPageButton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(-90deg);
+	scale: 50%;
+}
+
 
 @media screen and (max-width: 800px){
 	.contentsWrapper{
