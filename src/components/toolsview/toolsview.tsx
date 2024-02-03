@@ -7,12 +7,8 @@ interface ToolsViewProps{
 
 export const ToolsView: React.FC<ToolsViewProps> = ({tools}) => {
 		
-
 	function findMatches(toolsarray:string[]){
 		let newarray:any = []
-		// toolsarray.map((item)=>{
-		// 	newarray.push(skillsArray.filter(butts => butts.title === item))
-		// })
 		for(let i = 0; i < toolsarray.length; i++){
 			let a = skillsArray.filter(item => item.title === tools[i])
 			newarray.push(a[0].icon)
@@ -20,7 +16,6 @@ export const ToolsView: React.FC<ToolsViewProps> = ({tools}) => {
 		return newarray
 	}
 	let toolIconsArray = findMatches(tools)
-	console.log(toolIconsArray)
 
 	return (
 		<>
@@ -35,6 +30,4 @@ export const ToolsView: React.FC<ToolsViewProps> = ({tools}) => {
 			</div>
 		</>
 	)
-
-
 }

@@ -7,45 +7,39 @@ interface TypewriterProps {
 }
 
 export const Typewriter: React.FC<TypewriterProps> = ({ message, delay }) => {
-	const [currentIndex, setCurrentIndex] = useState(0);
 	const [typedMessage, setTypedMessage] = useState("");
 
-	function intervalHandler() {
-		let interval = setInterval(() => {
-			setTypedMessage(typedMessage + message[currentIndex])
-
-		}, delay)
-		return () => {
-			clearInterval(interval)
-		}
-
-	}
+	const interval = React.useRef<any>(null);
 
 	useEffect(() => {
 
-		let interval = setInterval(() => {
-			if (currentIndex < message.length) {
-				setTypedMessage(typedMessage + message[currentIndex])
-				setCurrentIndex(currentIndex + 1)
-				console.log('rerender')
-			}else{
-				return () => {
-				setCurrentIndex(0)
-				clearInterval(interval)
-				 }}
+		clearInterval(interval.current)
+		setTypedMessage("")
 
-		}, delay)
+		let builtString = ""
+		let i = 0;
+
+		interval.current = setInterval(() => {
+			builtString += message[i]
+			i++
+			setTypedMessage(builtString)
+
+			if (builtString === message) {
+				clearInterval(interval.current)
+			}
+		}, delay);
+
 		return () => {
-			clearInterval(interval)
+			clearInterval(interval.current)
 		}
-		setCurrentIndex(0)
-		// }}
-	}, [currentIndex, message, delay])
+
+	}, [message, delay])
+
 
 	return (
 		<>
 			<div>
-				{typedMessage}
+					{typedMessage}
 			</div>
 		</>
 	)

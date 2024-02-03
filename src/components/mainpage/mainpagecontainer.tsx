@@ -22,7 +22,7 @@ export const MainPage: React.FC = () => {
 
 		<>
 			<div ref={mainref => {if (!mainref) return; console.log(mainref.getBoundingClientRect().height)}} className={style.mainPageWrapper}>
-				<Typewriter message={'hi! i pooped!'} delay={250} />
+				{/* <Typewriter message={'hi! i pooped!'} delay={250} /> */}
 			</div>
 		</>
 	)
