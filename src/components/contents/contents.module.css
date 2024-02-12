@@ -1,11 +1,10 @@
 .contentsWrapper{
 	width: 100%;
-	aspect-ratio: 16/9;
-	display: grid;
-	position: relative;
+	height: 100%;
+	display: flex;
 	justify-content: center;
-	align-items: center;
-	/* overflow: scroll; */
+	flex-direction: column;
+	position: relative;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
@@ -15,13 +14,13 @@
 }
 
 .linksWrapper{
-	position: fixed;
+	position: absolute;
+	bottom: 0;
 	display: flex;
-	align-self: flex-end;
+	width: 100vw;
+	align-self: center;
 	justify-self: flex-end;
-	flex-direction: column;
 	min-width: 200px;
-	width: 12%;
 	margin-bottom: 10px;
 	z-index: 1;
 }
@@ -30,12 +29,11 @@
 .typewriterWrapper{
 	width: 50%;
 	height: 15%;
-	position: absolute;
 	display: flex;
 	align-self: center;
 	justify-content: space-between;
 	align-items: center;
-	justify-self: center;
+	/* justify-self: center; */
 }
 .contentTypewriter{
 	width: 80%;
@@ -53,11 +51,8 @@
 
 @media screen and (max-width: 800px){
 	.contentsWrapper{
-		display: flex;
-		flex-direction: column;
 		height: 100%;
 		width: 100%;
-		aspect-ratio: unset;
 	}
 	.typewriterWrapper{
 		top: 20%;
@@ -65,9 +60,9 @@
 	}
 
 	.linksWrapper{
-		position: absolute;
-		top: 15px;
-		left: 0;
+		/* position: absolute; */
+		/* top: 15px; */
+		/* left: 0; */
 		gap: 15px;
 		flex-direction: row;
 	}

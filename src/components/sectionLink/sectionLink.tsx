@@ -15,7 +15,7 @@ export const SectionLink: React.FC<SectionLinkProps> = ({ category }) => {
 		<>
 			<div className={style.linkContainer}>
 				<div className={style.arrowBox}>
-					<div className={style.showAss}>
+					<div className={style.showIcon}>
 						<SpinIcon />
 					</div>
 				</div>

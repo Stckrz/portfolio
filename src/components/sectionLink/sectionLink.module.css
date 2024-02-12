@@ -8,19 +8,25 @@
 
 .arrowBox{
 	width: 20%;
+	height: 100%;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
-.showAss{
+.showIcon{
 	display: none;
 }
 
 .categoryName{
 	width: 80%;
-	padding-right: 5px;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 5px;
 }
 
-.linkContainer:hover .showAss{
+.linkContainer:hover .showIcon{
 	display: flex;
 }
