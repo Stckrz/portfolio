@@ -20,7 +20,7 @@ export const Skills: React.FC = () => {
 		<>
 			<div className={isMounted ? animationStyle.componentFadeIn : animationStyle.componentFadeOut}>
 				<div className={style.skillWrap}>
-					<div onClick={() => { handleFadeOut(isMounted, setIsMounted, setPage) }}>
+					<div className={style.backButtonContainer} onClick={() => { handleFadeOut(isMounted, setIsMounted, setPage) }}>
 						<BackButton />
 					</div>
 					<div className={style.skillsContainer}>

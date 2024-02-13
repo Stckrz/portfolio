@@ -33,8 +33,8 @@
 	align-self: center;
 	justify-content: space-between;
 	align-items: center;
-	/* justify-self: center; */
 }
+
 .contentTypewriter{
 	width: 80%;
 }
@@ -51,19 +51,23 @@
 
 @media screen and (max-width: 800px){
 	.contentsWrapper{
+		justify-content: space-around;
 		height: 100%;
 		width: 100%;
 	}
+
 	.typewriterWrapper{
+		justify-self: flex-start;
 		top: 20%;
 		width: 90%;
 	}
 
 	.linksWrapper{
-		/* position: absolute; */
-		/* top: 15px; */
-		/* left: 0; */
+		position: unset;
+		align-items: flex-start;
+		align-self: center;
+		justify-self: center;
+		flex-direction: column;
 		gap: 15px;
-		flex-direction: row;
 	}
 }

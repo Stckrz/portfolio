@@ -1,6 +1,6 @@
 .linkContainer{
 	font-family:monospace;
-	width: 100%;
+	width: 25%;
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
@@ -29,4 +29,13 @@
 
 .linkContainer:hover .showIcon{
 	display: flex;
+}
+
+
+@media screen and (max-width: 800px){
+	.categoryName{
+		font-size: 14px;
+	
+	}
+
 }

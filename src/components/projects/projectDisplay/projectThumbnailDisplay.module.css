@@ -5,6 +5,9 @@
 	border: 1px solid black;
 	box-shadow: 5px 5px 5px 0px black;
 }
+.projectName{
+	height: 10%;
+}
 
 .projectThumbnailDisplayWrapper img{
 	width: 100%;
@@ -15,6 +18,9 @@
 
 .projectThumbnailDisplayWrapper:hover{
 	animation: float 1s infinite alternate;
+}
+.comingSoon{
+	font-size: 20px;
 }
 
 @keyframes float{

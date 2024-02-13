@@ -23,8 +23,6 @@ export const SectionLink: React.FC<SectionLinkProps> = ({ category }) => {
 					{category}
 				</div>
 			</div>
-
 		</>
 	)
-
 }

@@ -1,19 +1,23 @@
-.skillsContainer{
-	user-select: none;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 10px;
-	justify-content: space-evenly;
-	padding: 50px;
-	
-}
-
 .skillWrap{
 	display: flex;
 	flex-direction: column;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
+}
+
+.skillsContainer{
+	height: 80%;
+	user-select: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 10px;
+	padding: 20px;
+}
+
+.backButtonContainer{
+	height: 20%;
 }
 
 @media screen and (max-width: 1300px){
@@ -22,6 +26,14 @@
 
 
 @media screen and (max-width: 800px){
+	.skillWrap{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 	.skillsContainer{
 		padding: 0px;
 		justify-content: flex-start;
@@ -30,13 +42,8 @@
 		height: 80%;
 		flex-direction: row;
 	}
-	.skillWrap{
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
+	.backButtonContainer{
+		height: 10%;
 	}
 
 }

@@ -5,6 +5,9 @@
 	width: 100%;
 	z-index: 0;
 }
+.backButtonBox{
+	color: black;
+}
 
 .projectMainBox{
 	margin-top: 5px;
