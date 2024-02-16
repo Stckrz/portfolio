@@ -66,5 +66,6 @@
 	}
 	.indexContainer{
 		display: flex;
+		height: 15%;
 	}
 }

@@ -4,20 +4,20 @@ import style from './skilldropdown.module.css';
 interface SkillDropdownProps {
 	icon: any,
 	title?: string,
+	description: string,
 }
 
-export const SkillDropdown: React.FC<SkillDropdownProps> = ({ icon, title }) => {
+export const SkillDropdown: React.FC<SkillDropdownProps> = ({ icon, title, description }) => {
 	return (
 		<>
-				<div className={style.skillTitleBox}>
+				<div className={style.skillContainer}>
 			<div className={style.iconContainer}>
 					<div className={title === 'React' ? style.reactIcon : style.actualIcon}>{icon}</div>
-					<div>{title}</div>
 				</div>
 				<div className={style.skillDescriptionBox}>
-					<div>this is a description about the stuff..</div>
+					<div className={style.skillTitle}>{title}</div>
+					<div className={style.skillDescription} >{description}</div>
 				</div>
-				
 			</div>
 		</>
 	)
