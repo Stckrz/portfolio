@@ -26,7 +26,7 @@ export const Skills: React.FC = () => {
 					<div className={style.skillsContainer}>
 						{skillsArray.map((item) => {
 							return (
-								<SkillDropdown icon={item.icon} title={item.title} />
+								<SkillDropdown icon={item.icon} title={item.title} description={item.description} />
 							)
 						})
 						}

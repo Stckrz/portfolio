@@ -1,12 +1,39 @@
+.skillContainer{
+	margin: 10px;
+	display: flex;
+	box-shadow: 0px 0px 4px 1px;
+	width: 100%;
+	height: 25%;
+}
+
 .iconContainer{
-	width: 18%;
-	height: 30%;
-	aspect-ratio: 1/1;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
 }
+
+.skillDescriptionBox{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.skillTitle{
+	display: flex;
+	height: 20%;
+	width: 90%;
+	padding-top: 5px;
+	border-bottom: 1px solid grey;
+	font-size: 28px;
+}
+
+.skillDescription{
+	font-size: 22px;
+	padding: 20px;
+}
+
 
 .reactIcon{
 	display: flex;
@@ -22,12 +49,17 @@
   }
 }
 
-.descriptionContainer{
-	height: 20px;
-	visibility: hidden;
-}
-
 @media screen and (max-width: 800px){
+	.skillContainer{
+		padding: 10px;
+		height: 15%;
+	}
+	.backButtonContainer{
+		height: 10%;
+	}
+	.skillTitle{
+		justify-content: flex-end;
+	}
 	.iconContainer{
 		width: 30%;
 	}
