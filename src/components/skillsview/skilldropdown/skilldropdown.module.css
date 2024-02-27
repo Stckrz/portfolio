@@ -18,6 +18,15 @@
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
+	overflow: scroll;
+
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
+
+.skillsContainer::-webkit-scrollbar {
+	display: none;
 }
 
 .skillTitle{
@@ -32,6 +41,9 @@
 .skillDescription{
 	font-size: 22px;
 	padding: 20px;
+	overflow: scroll;
+	  -ms-overflow-style: none;  /* IE and Edge */
+	  scrollbar-width: none;  /* Firefox */
 }
 
 
