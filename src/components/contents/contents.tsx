@@ -33,7 +33,7 @@ export const Contents: React.FC = () => {
 				</div>
 
 				<div className={style.linksWrapper}>
-					{categories.map((category) => { return (<SectionLink category={category} />) })}
+					{categories.map((category) => { return (<SectionLink key={category} category={category} />) })}
 				</div>
 			</div>
 		</>

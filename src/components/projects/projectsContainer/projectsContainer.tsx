@@ -18,7 +18,7 @@ import { ProjectFullDisplay } from 'components/projects/projectDisplay/projectFu
 export const Projects: React.FC = () => {
 	const { setPage } = useContext<any>(CurrentPage);
 	const [activeIndex, setActiveIndex] = useState(0);
-	
+
 
 	//state for this components rendering. used for handling the fade-out of the component upon close
 	const [isMounted, setIsMounted] = useState(true);

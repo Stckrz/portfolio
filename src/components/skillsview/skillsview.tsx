@@ -15,6 +15,8 @@ import { skillsArray } from 'library/skillsetObject';
 export const Skills: React.FC = () => {
 	const { setPage } = useContext<any>(CurrentPage)
 	const [isMounted, setIsMounted] = useState(true);
+	const [shownDescription, setShownDescription] = useState("Click for information")
+
 
 	return (
 		<>
@@ -23,13 +25,16 @@ export const Skills: React.FC = () => {
 					<div className={style.backButtonContainer} onClick={() => { handleFadeOut(isMounted, setIsMounted, setPage) }}>
 						<BackButton />
 					</div>
-					<div className={style.skillsContainer}>
-						{skillsArray.map((item) => {
-							return (
-								<SkillDropdown icon={item.icon} title={item.title} description={item.description} />
-							)
-						})
-						}
+					<div className={style.skillView}>
+						<div className={style.skillsContainer}>
+							{skillsArray.map((item) => {
+								return (
+									<SkillDropdown key={item.title} icon={item.icon} title={item.title} description={item.description} setShownDescription={setShownDescription}/>
+								)
+							})
+							}
+						</div>
+						<div className={style.skillDescription}>{shownDescription}</div>
 					</div>
 				</div>
 			</div>

@@ -19,6 +19,7 @@ export const Home = () => {
 		<>
 			<CurrentPage.Provider value={{ page, setPage }}>
 				<div className={style.homeContainer}>
+
 					<div className={style.contentDisplay}>
 						{page === "Contents" &&
 							<Contents />

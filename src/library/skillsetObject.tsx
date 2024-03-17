@@ -7,6 +7,9 @@ import { FaCss3Alt } from 'react-icons/fa';
 import { FaHtml5 } from "react-icons/fa";
 import { SiTailwindcss } from 'react-icons/si';
 import { FaStackOverflow } from 'react-icons/fa';
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 import { StackOverflowIcon } from 'components/skillsview/skilldropdown/animations/stackoverflow/stackoverflow';
 const size = "3em"
@@ -33,9 +36,24 @@ export const skillsArray = [
 		description: "I have spent more time in the last year in React than anything. I have been pretty much exclusively developing in React for a while now, and absorbing and learning as much as I can. I've done a lot of work with react router, typescript, etc.. I have good experience with function based components, and a good understanding of all of the built-in hooks. I have made a number of web apps in React, some of which are in the projects section of this portfolio."
 	},
 	{
+		icon: <SiRedux size={size} />,
+		title: 'Redux',
+		description: "I have used redux on several projects for simple global state management. I have only used stores and slices, I have not had experience with the 'old way' of using redux, which I have heard was cumbersome and terrible."
+	},
+	{
 		icon: <TbBrandTypescript size={size} />,
 		title: 'Typescript',
 		description: "Basically, I always knew I would need typescript from day 1 of my journey with React. I made a number of projects to make sure that I was familiar with React before jumping into typescript, and have made sure to include it in everything I have made sense. They are basically the same thing to me."
+	},
+	{
+		icon: <SiExpress size={size} />,
+		title: 'Express',
+		description: "I have been using mostly express as my choice for server code, especially for REST API's in MERN stack applications."
+	},
+	{
+		icon: <SiMongodb size={size} />,
+		title: 'MongoDb',
+		description: "I have been using MongoDb instead of sqlite ever since I started learning the MERN stack, and have created a few different projects with it, both using the cloud service and private docker containers. Familliar with most aggregations and CRUD methods."
 	},
 	{
 		icon: <FaPython size={size} />,
@@ -47,11 +65,11 @@ export const skillsArray = [
 		title: 'Django',
 		description: "Django was my first experience with any sort of web app framework, and it was introduced as a backend solution. It was confusing at first, but I've spent enough time with it that it's become my go-to solution for making API's and backends in order to test my front-end code."
 	},
-	{
-		icon: <FaStackOverflow size={size} />,
-		title: 'Stack Overflow',
-		description: "This is probably the technology I have the most experience with. Who knows how many countless hours I have spent on this website.."
-	},
+	// {
+	// 	icon: <FaStackOverflow size={size} />,
+	// 	title: 'Stack Overflow',
+	// 	description: "This is probably the technology I have the most experience with. Who knows how many countless hours I have spent on this website.."
+	// },
 	{
 		icon: <SiTailwindcss size={size} />,
 		title: 'Tailwind',
