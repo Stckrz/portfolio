@@ -7,11 +7,15 @@ export interface IPageInterface{
 	page: string,
 	setPage: (page: string) => void
 }
+export interface IColorInterface{
+	backgroundColor: string,
+	fontColor: string
+}
 
 export interface IProjectInterface{
 	index: number,
 	name: string,
-	color: string,
+	colors: IColorInterface,
 	iconURL?: string,
 	overviewURL?: string,
 	projectDetails?: string[],

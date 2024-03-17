@@ -12,7 +12,7 @@ export const ProjectThumbnailDisplay: React.FC<ProjectThumbnailDisplayProps> = (
 		<>
 			<div className={style.thumbnailWrapper}>
 				<div
-					style={{ backgroundColor: project.color }}
+					style={{ backgroundColor: project.colors.backgroundColor }}
 					className={style.projectThumbnailDisplayWrapper}>
 					{project.iconURL ?
 						<img src={project.iconURL} /> :

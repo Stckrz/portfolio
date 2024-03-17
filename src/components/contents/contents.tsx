@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import style from './contents.module.css';
 import { contentsArray } from 'library/contentsObjectArray';
 import { SectionLink } from 'components/sectionLink/sectionLink';
@@ -14,11 +14,16 @@ export const Contents: React.FC = () => {
 	let [typewriterText, setTypewriterText] = useState(contentsArray[contentArrayIndex]);
 
 	function contentArrayIndexHandler() {
-		if (contentArrayIndex < contentsArray.length) {
+		if (contentArrayIndex <= contentsArray.length) {
 			setContentArrayIndex(contentArrayIndex + 1)
-			setTypewriterText(contentsArray[contentArrayIndex])
+		} else{
+			setContentArrayIndex(0);
 		}
 	}
+
+	useEffect(() => {
+		setTypewriterText(contentsArray[contentArrayIndex])
+	}, [contentArrayIndex])
 
 	return (
 		<>

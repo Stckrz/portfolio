@@ -1,8 +1,5 @@
 import React from 'react';
-import { useState, useContext } from 'react';
 import style from './projectFullDisplay.module.css';
-import { ProjectThumbnailDisplay } from 'components/projects/projectDisplay/projectThumbnailDisplay';
-import { projectsObject } from 'library/projectsObject';
 import { ToolsView } from 'components/toolsview/toolsview';
 import { IProjectInterface } from 'library/context';
 import { FiExternalLink } from 'react-icons/fi';
@@ -11,15 +8,13 @@ interface ProjectFullDisplayProps {
 	project: IProjectInterface,
 }
 
-export const ProjectFullDisplay: React.FC<ProjectFullDisplayProps> = ({ project }) => {
-	const [activeIndex, setActiveIndex] = useState(0);
 
+export const ProjectFullDisplay: React.FC<ProjectFullDisplayProps> = ({ project }) => {
 
 	return (
 		<>
-			<div className={style.projectFullDisplayWrapper} style={{ backgroundColor: project.color }} >
+			<div className={style.projectFullDisplayWrapper} style={{ backgroundColor: project.colors.backgroundColor, color: project.colors.fontColor }} >
 				<div className={style.projectMainBox}>
-
 					<div className={style.projectScreenshot}>
 						{project.overviewURL !== "" &&
 							<img src={project.overviewURL} />

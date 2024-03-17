@@ -13,7 +13,10 @@ export const projectsObject: IProjectInterface[] =
 		{
 			index: 0,
 			name: "StoreFront",
-			color: '#fcefe8',
+			colors: {
+				backgroundColor: '#fcefe8',
+				fontColor: 'black',
+			},
 			iconURL: storefrontthumbnail,
 			overviewURL: storefrontfull,
 			projectDetails: [
@@ -29,7 +32,10 @@ export const projectsObject: IProjectInterface[] =
 		{
 			index: 1,
 			name: "Mythic Plus Spy",
-			color: '#CFFAFE',
+			colors: {
+				backgroundColor: '#CFFAFE',
+				fontColor: 'black',
+			},
 			iconURL: mpslogo,
 			overviewURL: mplusspy,
 			projectDetails: [
@@ -44,7 +50,10 @@ export const projectsObject: IProjectInterface[] =
 		{
 			index: 2,
 			name: "TODO",
-			color: '#18191A',
+			colors: {
+				backgroundColor: '#18191A',
+				fontColor: 'white'
+			},
 			iconURL: todothumb,
 			overviewURL: todo,
 			projectDetails: [
@@ -59,21 +68,10 @@ export const projectsObject: IProjectInterface[] =
 		{
 			index: 3,
 			name: "Coming Soon",
-			color: 'grey',
+			colors: {
+				backgroundColor: 'grey',
+				fontColor: "white"
+			},
 		},
-		// {
-		// 	index: 2,
-		// 	name: "Asses",
-		// 	color: 'green',
-		// 	iconURL: "",
-		// 	overviewURL: "",
-		// },
-		// {
-		// 	index: 3,
-		// 	name: "Ur Mom",
-		// 	color: 'white',
-		// 	iconURL: "",
-		// 	overviewURL: "",
-		// }
 
 	]

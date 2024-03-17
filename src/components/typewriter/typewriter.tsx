@@ -11,10 +11,10 @@ export const Typewriter: React.FC<TypewriterProps> = ({ message, delay }) => {
 
 	const interval = React.useRef<any>(null);
 
-	useEffect(() => {
+	function typeStuff() {
 
 		clearInterval(interval.current)
-		setTypedMessage("")
+		setTypedMessage("a")
 
 		let builtString = ""
 		let i = 0;
@@ -33,13 +33,19 @@ export const Typewriter: React.FC<TypewriterProps> = ({ message, delay }) => {
 			clearInterval(interval.current)
 		}
 
+	}
+
+	useEffect(() => {
+		message !== undefined &&
+			typeStuff()
+
 	}, [message, delay])
 
 
 	return (
 		<>
 			<div>
-					{typedMessage}
+				{typedMessage}
 			</div>
 		</>
 	)
