@@ -6,7 +6,12 @@ import { SectionLink } from 'components/sectionLink/sectionLink';
 import { Typewriter } from 'components/typewriter/typewriter';
 import { BackButton } from 'components/backButton/backButton';
 
-let categories = ['About', 'Skills', 'Projects', 'Resume']
+let categories = [
+	// 'About', 
+	'Skills', 
+	'Projects', 
+	// 'Resume'
+]
 
 export const Contents: React.FC = () => {
 
