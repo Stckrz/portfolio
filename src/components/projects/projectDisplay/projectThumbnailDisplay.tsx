@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { SetStateAction } from 'react';
 import style from './projectThumbnailDisplay.module.css';
 import { IProjectInterface } from 'library/context';
+
 
 interface ProjectThumbnailDisplayProps {
 	project: IProjectInterface,

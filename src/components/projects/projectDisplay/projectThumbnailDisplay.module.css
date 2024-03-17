@@ -56,14 +56,28 @@
 }
 
 @media screen and (max-width: 800px){
+	.thumbnailWrapper{
+		align-items: center;
+		height: 100%;
+		width: 80%;
+	}
+
+	.projectThumbnailDisplayWrapper{
+		display: flex;
+		height: 100%;
+		border: 1px solid black;
+		box-shadow: 5px 5px 5px 0px black;
+	}
+
 	.projectThumbnailDisplayWrapper img{
 		object-position: 50% 50%;
 	}
+
 	.projectThumbnailDisplayWrapper:hover{
 		animation: unset;
 	}
+
 	.projectName{
 		font-size: 14px;
 	}
-	
 }

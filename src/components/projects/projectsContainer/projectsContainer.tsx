@@ -16,6 +16,7 @@ import { useViewport } from 'hooks/useViewport';
 //component imports
 import { ProjectThumbnailDisplay } from 'components/projects/projectDisplay/projectThumbnailDisplay';
 import { ProjectFullDisplay } from 'components/projects/projectDisplay/projectFullDisplay';
+import { ProjectsHamburger } from 'components/projects/projectsHamburger/projectsHamburger';
 
 export const Projects: React.FC = () => {
 	const { setPage } = useContext<any>(CurrentPage);
@@ -40,9 +41,9 @@ export const Projects: React.FC = () => {
 							<div className={style.containerContainer}>
 								{projectsObject.map((project: IProjectInterface) => {
 									return (
-										<div className={style.projectDisplayContainerMin}
-											onClick={() => { setActiveIndex(project.index) }}
-										>
+										<div 
+											onClick={()=>{setActiveIndex(project.index)}}
+											className={style.projectDisplayContainerMin}>
 											<ProjectThumbnailDisplay project={project} />
 										</div>
 									)
@@ -73,17 +74,9 @@ export const Projects: React.FC = () => {
 							<div className={style.backButtonBox} onClick={() => { handleFadeOut(isMounted, setIsMounted, setPage) }}>
 								<BackButton />
 							</div>
-							{/* <div className={style.containerContainer}> */}
-							{/* 	{projectsObject.map((project: IProjectInterface) => { */}
-							{/* 		return ( */}
-							{/* 			<div className={style.projectDisplayContainerMin} */}
-							{/* 				onClick={() => { setActiveIndex(project.index) }} */}
-							{/* 			> */}
-							{/* 				<ProjectThumbnailDisplay project={project} /> */}
-							{/* 			</div> */}
-							{/* 		) */}
-							{/* 	})} */}
-							{/* </div> */}
+							<div className={style.hamburgerBox}>
+								<ProjectsHamburger setActiveIndex={setActiveIndex} />
+							</div>
 						</div>
 						<div className={style.projectsContainer} >
 
