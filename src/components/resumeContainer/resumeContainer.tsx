@@ -22,7 +22,7 @@ const ResumeContainer: React.FC = () => {
 
 		<div
 			className={"resumeContainer scale-125 opacity-0"}>
-			<a href={resume} target={"_blank"} className={"text-catflamingo flex flex-col items-center justify-center"}>
+			<a href={resume} target={"_blank"} className={"text-catflamingo flex hover:none md:hover:text-catlavender flex-col items-center justify-center"}>
 			<TiDocumentText size={width > 800 ? "5em": "3em"} />
 			My Resume
 			</a>

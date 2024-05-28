@@ -12,7 +12,7 @@ export const skillArray = [
 		name: "Express",
 		logo: <SiExpress size={"3em"} />,
 		mobileLogo: <SiExpress size={"2em"} />,
-		color: "black"
+		color: "white"
 	},
 	{
 		name: "Typescript",

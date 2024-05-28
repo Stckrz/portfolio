@@ -19,7 +19,7 @@ const ProjectContainer: React.FC = () => {
 
 	return (
 		<>
-			<div className={"flex flex-col flex-start items-start gap-4 w-full"}>
+			<div className={"flex flex-col flex-start items-start gap-8 w-full"}>
 				{projectArray.map((project) => {
 					return (
 						<div

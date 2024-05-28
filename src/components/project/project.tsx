@@ -27,7 +27,7 @@ const Project: React.FC<ProjectProps> = ({ projectObject }) => {
 		<>
 			<div className={"flex md:flex-row flex-col justify-between items-center w-full md:max-h-24 border-t border-t-gray-700 border-b border-b-gray-700"}>
 				<div className={"w-3/4 md:w-1/3 p-1"}>
-					<a href={projectObject.link} target={"_blank"} className={"flex items-center justify-center"}>
+					<a href={projectObject.link} target={"_blank"} className={"flex items-center justify-center p-2"}>
 						<img
 							className={"object-fill rounded-md"}
 							src={projectObject.logo}
@@ -43,7 +43,7 @@ const Project: React.FC<ProjectProps> = ({ projectObject }) => {
 					<div className={"flex flex-col md:flex-row w-full items-start justify-center md:justify-between gap-1"}>
 						<div>
 							<a
-								className={"text-blue-500"}
+								className={"text-blue-500 hover:none md:hover:text-catlavender"}
 								href={projectObject.link}
 								target={"_blank"}>
 								{projectObject.link}
