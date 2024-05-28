@@ -1,5 +1,3 @@
-import storefrontthumbnail from 'src/assets/photos/storefrontthumbnail.png';
-// import mpslogo from 'src/assets/photos/mpslogo.png';
 import todoLogo from 'src/assets/photos/todoLogo.png';
 import calleditlogo from 'src/assets/photos/calledit/Calledit!.svg';
 import mpslogo from 'src/assets/photos/mps.svg';

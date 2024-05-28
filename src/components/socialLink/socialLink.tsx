@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import { ISocialLink } from "src/models/linkmodels/linkmodels"
 import gsap from "gsap";
 
