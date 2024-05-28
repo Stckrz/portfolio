@@ -2,7 +2,7 @@
   "name": "portfoliomk2",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://stckrz.github.io/",
+  "homepage": "https://stckrz.github.io/portfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
