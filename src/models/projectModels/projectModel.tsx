@@ -1,4 +1,3 @@
-import todoLogo from 'src/assets/photos/todoLogo.png';
 import calleditlogo from 'src/assets/photos/calledit/Calledit!.svg';
 import mpslogo from 'src/assets/photos/mps.svg';
 import inventoryPhoto from 'src/assets/photos/inventory.png'
@@ -47,13 +46,4 @@ export const projectArray = [
 		],
 		link: "https://stckrz.com/MythicPlusSpy"
 	},
-	// {
-	// 	name: "To Do App",
-	// 	description: "Everybody has to have a todo app.. So this is the one I'm putting on here.",
-	// 	logo: todoLogo,
-	// 	skills: [
-	// 		"Javascript", "React", "Typescript",
-	// 	],
-	// 	link: "https://stckrz.com/todo"
-	// }
 ]
