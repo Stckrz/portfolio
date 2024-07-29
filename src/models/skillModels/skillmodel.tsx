@@ -1,5 +1,5 @@
-import { IoLogoReact, IoLogoJavascript, IoLogoPython } from "react-icons/io5"
-import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiRedux, SiDjango } from "react-icons/si"
+import { IoLogoReact, IoLogoJavascript, IoLogoPython, IoLogoVue } from "react-icons/io5"
+import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiRedux, SiDjango, SiPhp, SiMysql } from "react-icons/si"
 
 export const skillArray = [
 	{
@@ -37,6 +37,24 @@ export const skillArray = [
 		logo: <SiRedux size={"3em"} />,
 		mobileLogo: <SiRedux size={"2em"} />,
 		color: "#b4befe"
+	},
+	{
+		name: "Vue",
+		logo: <IoLogoVue size={"3em"} />,
+		mobileLogo: <IoLogoVue size={"2em"} />,
+		color: "#00b77e"
+	},
+	{
+		name: "PHP",
+		logo: <SiPhp size={"3em"} />,
+		mobileLogo: <SiPhp size={"2em"} />,
+		color: "#7377ad"
+	},
+	{
+		name: "MySql",
+		logo: <SiMysql size={"3em"} />,
+		mobileLogo: <SiMysql size={"2em"} />,
+		color: "#dd8a00"
 	},
 	{
 		name: "Mongodb",

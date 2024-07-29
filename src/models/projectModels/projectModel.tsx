@@ -1,6 +1,7 @@
 import todoLogo from 'src/assets/photos/todoLogo.png';
 import calleditlogo from 'src/assets/photos/calledit/Calledit!.svg';
 import mpslogo from 'src/assets/photos/mps.svg';
+import inventoryPhoto from 'src/assets/photos/inventory.png'
 
 export interface ProjectModel {
 	name: string,
@@ -20,6 +21,15 @@ export const projectModelDefault = {
 
 export const projectArray = [
 	{
+		name: "Inventory System",
+		description: "A basic inventory management system with functionality for fulfilling orders, restocking, and adding and editing shop items",
+		logo: inventoryPhoto,
+		skills: [
+			"Javascript", "Vue", "Typescript", "PHP", "MySql"
+		],
+		link: "https://stckrz.com/vueFrontend"
+	},
+	{
 		name: "Calledit!",
 		description: "Users make a prediction, and other users vote whether or not they think it will come true!",
 		logo: calleditlogo,
@@ -37,13 +47,13 @@ export const projectArray = [
 		],
 		link: "https://stckrz.com/MythicPlusSpy"
 	},
-	{
-		name: "To Do App",
-		description: "Everybody has to have a todo app.. So this is the one I'm putting on here.",
-		logo: todoLogo,
-		skills: [
-			"Javascript", "React", "Typescript",
-		],
-		link: "https://stckrz.com/todo"
-	}
+	// {
+	// 	name: "To Do App",
+	// 	description: "Everybody has to have a todo app.. So this is the one I'm putting on here.",
+	// 	logo: todoLogo,
+	// 	skills: [
+	// 		"Javascript", "React", "Typescript",
+	// 	],
+	// 	link: "https://stckrz.com/todo"
+	// }
 ]
