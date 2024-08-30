@@ -1,4 +1,5 @@
 import calleditlogo from 'src/assets/photos/calledit/Calledit!.svg';
+import resoniteshrinelogo from 'src/assets/resoniteshrine.png'
 import mpslogo from 'src/assets/photos/mps.svg';
 import inventoryPhoto from 'src/assets/photos/inventory.png'
 
@@ -19,6 +20,15 @@ export const projectModelDefault = {
 }
 
 export const projectArray = [
+	{
+		name: "Resonite Shrine",
+		description: "A blog style website where I can post articles and tutorials for the VR game Resonite",
+		logo: resoniteshrinelogo,
+		skills: [
+			"Javascript", "React", "Tailwind", "Typescript", "Django"
+		],
+		link: "https://stckrz.com/resoniteshrine"
+	},
 	{
 		name: "Inventory System",
 		description: "A basic inventory management system with functionality for fulfilling orders, restocking, and adding and editing shop items",
