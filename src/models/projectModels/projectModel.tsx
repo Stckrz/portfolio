@@ -1,7 +1,8 @@
 import calleditlogo from 'src/assets/photos/calledit/Calledit!.svg';
-import resoniteshrinelogo from 'src/assets/resoniteshrine.png'
+import resoniteshrinelogo from 'src/assets/resoniteshrine.png';
 import mpslogo from 'src/assets/photos/mps.svg';
-import inventoryPhoto from 'src/assets/photos/inventory.png'
+import inventoryPhoto from 'src/assets/photos/inventory.png';
+import chesslogo from 'src/assets/photos/chessLogo.png';
 
 export interface ProjectModel {
 	name: string,
@@ -20,6 +21,15 @@ export const projectModelDefault = {
 }
 
 export const projectArray = [
+	{
+		name: "Chess Stats",
+		description: "A front-end consumption of the Chess.com API build using Shadcn Ui",
+		logo: chesslogo,
+		skills: [
+			"Javascript", "React", "Tailwind", "Typescript",
+		],
+		link: "https://stckrz.com/chessStats"
+	},
 	{
 		name: "Resonite Shrine",
 		description: "A blog style website where I can post articles and tutorials for the VR game Resonite",
