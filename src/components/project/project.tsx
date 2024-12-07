@@ -25,7 +25,7 @@ const Project: React.FC<ProjectProps> = ({ projectObject }) => {
 
 	return (
 		<>
-			<div className={"flex md:flex-row flex-col justify-between items-center w-full md:max-h-24 border-t border-t-gray-700 border-b border-b-gray-700"}>
+			<div className={"flex md:flex-row flex-col justify-between items-center w-full border-t border-t-gray-700 border-b border-b-gray-700"}>
 				<div className={"w-3/4 md:w-1/3 p-1"}>
 					<a href={projectObject.link} target={"_blank"} className={"max-h-20 flex items-center justify-center p-2"}>
 						<img
@@ -35,7 +35,7 @@ const Project: React.FC<ProjectProps> = ({ projectObject }) => {
 						</img>
 					</a>
 				</div>
-				<div className={"w-full md:w-2/3 flex flex-col items-start justify-center m-2 p-1"}>
+				<div className={"w-full md:w-2/3 flex flex-col items-start justify-center m-2"}>
 					<div
 						className={"flex w-full text-start items-start justify-start"}>
 						{projectObject.description}
@@ -49,7 +49,7 @@ const Project: React.FC<ProjectProps> = ({ projectObject }) => {
 								{projectObject.link}
 							</a>
 						</div>
-						<div className={"flex items-start justify-end gap-1 w-full"} >
+						<div className={"flex items-start justify-end gap-1 w-full  p-0"} >
 							{
 								skillsIconArray.map((skill: Skill) => {
 									return (
