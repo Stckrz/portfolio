@@ -1,7 +1,7 @@
 import gsap from "gsap"
 import { useEffect, useRef } from "react"
 import { TiDocumentText } from "react-icons/ti"
-import resume from 'src/assets/MaddieResume.pdf';
+import resume from 'src/assets/MadisonSage.pdf';
 import { useViewport } from "src/hooks/useViewport";
 
 const ResumeContainer: React.FC = () => {
