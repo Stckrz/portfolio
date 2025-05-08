@@ -1,3 +1,4 @@
+import { FaLaravel } from "react-icons/fa"
 import { IoLogoReact, IoLogoJavascript, IoLogoPython, IoLogoVue } from "react-icons/io5"
 import { SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiRedux, SiDjango, SiPhp, SiMysql } from "react-icons/si"
 
@@ -73,6 +74,12 @@ export const skillArray = [
 		logo: <SiDjango size={"3em"} />,
 		mobileLogo: <SiDjango size={"2em"} />,
 		color: "#94e2d5"
+	},
+	{
+		name: "Laravel",
+		logo: <FaLaravel size={"3em"} />,
+		mobileLogo: <FaLaravel size={"2em"} />,
+		color: "#e64553"
 	},
 ]
 
